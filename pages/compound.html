@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate compound interest and investment growth with our easy-to-use calculator. Plan your investments with confidence.">
+    <title>Compound Interest Calculator - Finance Calculators Hub</title>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1963782565227057" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="#" class="active">Compound Interest</a></li>
+                    <li><a href="roi.html">ROI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Compound Interest Calculator</h2>
+                <p>See how your investments can grow over time with the power of compound interest</p>
+            </div>
+        </section>
+
+        <!-- Ad Section -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1963782565227057"
+                 data-ad-slot="your-ad-slot-id"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="compound">
+                    <form>
+                        <div class="input-group">
+                            <label for="compound-principal">Initial Amount ($)</label>
+                            <input type="number" id="compound-principal" required min="0" placeholder="e.g., 10000">
+                            <span class="helper-text">Enter your initial investment amount</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="compound-rate">Annual Interest Rate (%)</label>
+                            <input type="number" id="compound-rate" required min="0" step="0.1" placeholder="e.g., 7.5">
+                            <span class="helper-text">Enter the expected annual return rate</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="compound-frequency">Compound Frequency</label>
+                            <select id="compound-frequency" required>
+                                <option value="12">Monthly</option>
+                                <option value="4">Quarterly</option>
+                                <option value="2">Semi-annually</option>
+                                <option value="1">Annually</option>
+                                <option value="365">Daily</option>
+                            </select>
+                            <span class="helper-text">How often interest is compounded</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="compound-time">Investment Period (Years)</label>
+                            <input type="number" id="compound-time" required min="1" placeholder="e.g., 10">
+                            <span class="helper-text">Enter the number of years you plan to invest</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="monthly-contribution">Monthly Contribution ($)</label>
+                            <input type="number" id="monthly-contribution" min="0" placeholder="e.g., 500">
+                            <span class="helper-text">Optional: Regular monthly deposits</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate Growth</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding Compound Interest</h3>
+                    <p>Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously accumulated interest.</p>
+                    
+                    <div class="tips">
+                        <h4>Key Benefits</h4>
+                        <ul>
+                            <li>Exponential Growth: Your money grows faster over time</li>
+                            <li>Time Advantage: The earlier you start, the more you benefit</li>
+                            <li>Reinvestment Power: Earnings generate more earnings</li>
+                            <li>Wealth Building: A powerful tool for long-term savings</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Investment Tips</h4>
+                        <ul>
+                            <li>Start early to maximize compound growth</li>
+                            <li>Reinvest dividends when possible</li>
+                            <li>Consider higher compound frequencies</li>
+                            <li>Make regular contributions to accelerate growth</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Related Resources Section -->
+        <div class="related-resources">
+            <div class="container">
+                <h3><i class="fas fa-books"></i> Recommended Resources</h3>
+                <div class="resources-grid">
+                    <a href="https://amzn.to/4l7bhvF" class="resource-card" target="_blank" rel="nofollow sponsored">
+                        <div class="resource-content">
+                            <i class="fas fa-calculator"></i>
+                            <h4>Financial Calculator Mastery</h4>
+                            <p>Master complex financial calculations with this comprehensive professional guide.</p>
+                            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="https://amzn.to/44DxWKl" class="resource-card" target="_blank" rel="nofollow sponsored">
+                        <div class="resource-content">
+                            <i class="fas fa-coins"></i>
+                            <h4>Smart Money Management</h4>
+                            <p>Learn proven strategies for effective business and personal finance management.</p>
+                            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="https://amzn.to/4kf5wLr" class="resource-card" target="_blank" rel="nofollow sponsored">
+                        <div class="resource-content">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Investment Growth Guide</h4>
+                            <p>Maximize your returns with expert investment strategies and insights.</p>
+                            <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Section -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1963782565227057"
+                 data-ad-slot="your-ad-slot-id"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="roi.html">ROI Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Share Button -->
+    <button class="floating-share-button" id="shareButton" aria-label="Share this calculator">
+        <i class="fas fa-share-alt"></i>
+    </button>
+
+    <!-- Share Modal -->
+    <div class="share-modal" id="shareModal">
+        <div class="share-modal-content">
+            <h3>Share Compound Interest Calculator</h3>
+            <div class="share-grid">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://financecalculatorshub.com/compound" 
+                   target="_blank" 
+                   class="share-button facebook"
+                   aria-label="Share on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://financecalculatorshub.com/compound&text=Calculate%20compound%20interest%20and%20see%20your%20investments%20grow!" 
+                   target="_blank" 
+                   class="share-button twitter"
+                   aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://financecalculatorshub.com/compound" 
+                   target="_blank" 
+                   class="share-button linkedin"
+                   aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Calculate%20compound%20interest:%20https://financecalculatorshub.com/compound" 
+                   target="_blank" 
+                   class="share-button whatsapp"
+                   aria-label="Share on WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Share Modal Functionality
+        const shareButton = document.getElementById('shareButton');
+        const shareModal = document.getElementById('shareModal');
+
+        shareButton.addEventListener('click', () => {
+            shareModal.classList.add('active');
+        });
+
+        shareModal.addEventListener('click', (e) => {
+            if (e.target === shareModal) {
+                shareModal.classList.remove('active');
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && shareModal.classList.contains('active')) {
+                shareModal.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 

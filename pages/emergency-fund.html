@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate how much emergency fund you need with our easy-to-use calculator. Plan your safety net based on your monthly expenses.">
+    <title>Emergency Fund Calculator - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">Emergency Fund</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Emergency Fund Calculator</h2>
+                <p>Calculate how much you should save for emergencies based on your monthly expenses</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="emergency">
+                    <form>
+                        <div class="input-group">
+                            <label for="monthly-expenses">Monthly Expenses ($)</label>
+                            <input type="number" id="monthly-expenses" required min="0" placeholder="e.g., 3000">
+                            <span class="helper-text">Enter your total monthly expenses</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="fund-multiplier">Desired Coverage Period</label>
+                            <select id="fund-multiplier" required>
+                                <option value="3">3 months (Minimum recommended)</option>
+                                <option value="6" selected>6 months (Standard recommended)</option>
+                                <option value="9">9 months (Conservative)</option>
+                                <option value="12">12 months (Extra security)</option>
+                            </select>
+                            <span class="helper-text">Select how many months of expenses you want to cover</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="current-savings">Current Emergency Savings ($)</label>
+                            <input type="number" id="current-savings" min="0" placeholder="e.g., 5000">
+                            <span class="helper-text">Optional: Enter your current emergency savings</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate Emergency Fund</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding Emergency Funds</h3>
+                    <p>An emergency fund is a financial safety net that helps you deal with unexpected expenses or loss of income. Having adequate emergency savings can help you avoid debt and maintain financial stability during challenging times.</p>
+                    
+                    <div class="tips">
+                        <h4>What to Include in Monthly Expenses</h4>
+                        <ul>
+                            <li>Housing (rent/mortgage, utilities)</li>
+                            <li>Food and groceries</li>
+                            <li>Transportation costs</li>
+                            <li>Insurance premiums</li>
+                            <li>Minimum debt payments</li>
+                            <li>Essential personal care</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Emergency Fund Tips</h4>
+                        <ul>
+                            <li>Keep funds easily accessible in a savings account</li>
+                            <li>Start small and build gradually</li>
+                            <li>Replenish the fund after using it</li>
+                            <li>Review and adjust as expenses change</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>When to Use Emergency Funds</h4>
+                        <ul>
+                            <li>Job loss or reduced income</li>
+                            <li>Medical emergencies</li>
+                            <li>Urgent home or car repairs</li>
+                            <li>Unexpected travel needs</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your debt-to-income ratio with our easy-to-use calculator. Understand your debt burden and borrowing capacity.">
+    <title>Debt-to-Income Ratio Calculator - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">DTI Ratio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Debt-to-Income Ratio Calculator</h2>
+                <p>Calculate your DTI ratio to understand your debt burden and borrowing capacity</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="dti">
+                    <form>
+                        <div class="input-group">
+                            <label for="monthly-debt">Monthly Debt Payments ($)</label>
+                            <input type="number" id="monthly-debt" required min="0" placeholder="e.g., 2000">
+                            <span class="helper-text">Enter your total monthly debt payments</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="gross-income">Monthly Gross Income ($)</label>
+                            <input type="number" id="gross-income" required min="0" placeholder="e.g., 6000">
+                            <span class="helper-text">Enter your monthly income before taxes</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate DTI Ratio</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding DTI Ratio</h3>
+                    <p>Your debt-to-income ratio (DTI) is a key financial metric that compares how much you owe each month to how much you earn. Lenders use this ratio to measure your ability to manage monthly payments and repay debts.</p>
+                    
+                    <div class="tips">
+                        <h4>What to Include in Monthly Debt</h4>
+                        <ul>
+                            <li>Mortgage or rent payments</li>
+                            <li>Car loans</li>
+                            <li>Student loans</li>
+                            <li>Credit card minimum payments</li>
+                            <li>Personal loan payments</li>
+                            <li>Other debt obligations</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>DTI Ratio Guidelines</h4>
+                        <ul>
+                            <li>43% or less: Maximum for most mortgages</li>
+                            <li>36% or less: Preferred by most lenders</li>
+                            <li>28% or less: Excellent debt management</li>
+                            <li>50% or more: Financial stress warning</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Tips to Improve DTI</h4>
+                        <ul>
+                            <li>Pay down existing debt</li>
+                            <li>Avoid taking on new debt</li>
+                            <li>Increase your income</li>
+                            <li>Refinance to lower payments</li>
+                            <li>Create a debt payoff strategy</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

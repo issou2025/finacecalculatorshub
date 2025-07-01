@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your monthly budget with our comprehensive budget calculator. Track income, expenses, and savings to achieve your financial goals.">
+    <title>Budget Planner Calculator - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">Budget</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Budget Planner Calculator</h2>
+                <p>Create a balanced budget and track your monthly income and expenses</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="budget">
+                    <form>
+                        <div class="input-group">
+                            <label for="budget-income">Monthly Income ($)</label>
+                            <input type="number" id="budget-income" required min="0" placeholder="e.g., 5000">
+                            <span class="helper-text">Enter your total monthly income after taxes</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="budget-fixed">Fixed Expenses ($)</label>
+                            <input type="number" id="budget-fixed" required min="0" placeholder="e.g., 2500">
+                            <span class="helper-text">Enter your total fixed monthly expenses (rent, utilities, etc.)</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="budget-variable">Variable Expenses ($)</label>
+                            <input type="number" id="budget-variable" required min="0" placeholder="e.g., 1000">
+                            <span class="helper-text">Enter your estimated variable expenses (groceries, entertainment, etc.)</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Analyze Budget</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding Your Budget</h3>
+                    <p>A well-planned budget helps you track your income and expenses, ensuring you live within your means and meet your financial goals. It's the foundation of good financial health and helps you make informed spending decisions.</p>
+                    
+                    <div class="tips">
+                        <h4>Fixed Expenses Examples</h4>
+                        <ul>
+                            <li>Rent or mortgage payments</li>
+                            <li>Utility bills (electricity, water, gas)</li>
+                            <li>Insurance premiums</li>
+                            <li>Car payments</li>
+                            <li>Phone and internet bills</li>
+                            <li>Loan payments</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Variable Expenses Examples</h4>
+                        <ul>
+                            <li>Groceries and dining out</li>
+                            <li>Entertainment and hobbies</li>
+                            <li>Shopping and personal care</li>
+                            <li>Transportation costs</li>
+                            <li>Healthcare expenses</li>
+                            <li>Gifts and special occasions</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Budgeting Tips</h4>
+                        <ul>
+                            <li>Follow the 50/30/20 rule (50% needs, 30% wants, 20% savings)</li>
+                            <li>Track all expenses for better accuracy</li>
+                            <li>Review and adjust your budget monthly</li>
+                            <li>Plan for irregular expenses</li>
+                            <li>Include savings as a fixed expense</li>
+                            <li>Keep an emergency fund</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your Return on Investment (ROI) with our easy-to-use calculator. Make informed investment decisions with accurate ROI calculations.">
+    <title>ROI Calculator - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">ROI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Return on Investment (ROI) Calculator</h2>
+                <p>Measure the profitability and efficiency of your investments</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="roi">
+                    <form>
+                        <div class="input-group">
+                            <label for="roi-gain">Investment Gain ($)</label>
+                            <input type="number" id="roi-gain" required min="0" placeholder="e.g., 15000">
+                            <span class="helper-text">Enter the total value gained from your investment</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="roi-cost">Investment Cost ($)</label>
+                            <input type="number" id="roi-cost" required min="0" placeholder="e.g., 10000">
+                            <span class="helper-text">Enter the total cost of your investment</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate ROI</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding ROI</h3>
+                    <p>Return on Investment (ROI) is a performance measure used to evaluate the efficiency or profitability of an investment. ROI tries to directly measure the amount of return on a particular investment, relative to the investment's cost.</p>
+                    
+                    <div class="tips">
+                        <h4>How to Use ROI</h4>
+                        <ul>
+                            <li>Compare different investment opportunities</li>
+                            <li>Evaluate past investment decisions</li>
+                            <li>Set investment goals and benchmarks</li>
+                            <li>Make data-driven investment choices</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>ROI Considerations</h4>
+                        <ul>
+                            <li>Consider the time period of the investment</li>
+                            <li>Account for all costs, including fees and maintenance</li>
+                            <li>Factor in the risk level of investments</li>
+                            <li>Compare ROI with industry benchmarks</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your retirement with our comprehensive retirement savings calculator. Calculate how much you need to save monthly to reach your retirement goals.">
+    <title>Retirement Savings Calculator - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">Retirement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Retirement Savings Calculator</h2>
+                <p>Plan your retirement savings and calculate how much you need to save monthly</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="retirement">
+                    <form>
+                        <div class="input-group">
+                            <label for="retirement-current">Current Savings ($)</label>
+                            <input type="number" id="retirement-current" required min="0" placeholder="e.g., 50000">
+                            <span class="helper-text">Enter your current retirement savings</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="retirement-target">Target Amount ($)</label>
+                            <input type="number" id="retirement-target" required min="0" placeholder="e.g., 1000000">
+                            <span class="helper-text">Enter your desired retirement savings goal</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="retirement-rate">Expected Annual Return Rate (%)</label>
+                            <input type="number" id="retirement-rate" required min="0" step="0.1" placeholder="e.g., 7">
+                            <span class="helper-text">Enter expected investment return rate</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="retirement-years">Years until Retirement</label>
+                            <input type="number" id="retirement-years" required min="1" placeholder="e.g., 25">
+                            <span class="helper-text">Enter number of years until retirement</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate Savings Need</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Planning for Retirement</h3>
+                    <p>Retirement planning is crucial for ensuring financial security in your later years. This calculator helps you determine how much you need to save monthly to reach your retirement goals, taking into account your current savings and expected investment returns.</p>
+                    
+                    <div class="tips">
+                        <h4>Retirement Planning Tips</h4>
+                        <ul>
+                            <li>Start saving early to benefit from compound interest</li>
+                            <li>Consider inflation when setting your target amount</li>
+                            <li>Diversify your retirement investments</li>
+                            <li>Review and adjust your plan regularly</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Common Retirement Accounts</h4>
+                        <ul>
+                            <li>401(k) - Employer-sponsored retirement plan</li>
+                            <li>Traditional IRA - Tax-deferred retirement account</li>
+                            <li>Roth IRA - Tax-free growth retirement account</li>
+                            <li>SEP IRA - Self-employed retirement option</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

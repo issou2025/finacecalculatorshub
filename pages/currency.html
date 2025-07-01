@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert between different currencies with our easy-to-use currency calculator. Get accurate exchange rate conversions for major world currencies.">
+    <title>Currency Converter - Finance Calculators Hub</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculator-page.css">
+    <script src="../js/calculators.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Finance Calculators Hub</h1>
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="mortgage.html">Mortgage</a></li>
+                    <li><a href="compound.html">Compound Interest</a></li>
+                    <li><a href="#" class="active">Currency</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="calculator-hero">
+            <div class="container">
+                <h2>Currency Converter</h2>
+                <p>Convert between major world currencies with up-to-date exchange rates</p>
+            </div>
+        </section>
+
+        <div class="calculator-container container">
+            <div class="calculator-wrapper">
+                <section class="calculator" id="currency">
+                    <form>
+                        <div class="input-group">
+                            <label for="currency-amount">Amount</label>
+                            <input type="number" id="currency-amount" required min="0" step="0.01" placeholder="e.g., 1000">
+                            <span class="helper-text">Enter the amount you want to convert</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="currency-from">From Currency</label>
+                            <select id="currency-from" required>
+                                <option value="USD">US Dollar (USD)</option>
+                                <option value="EUR">Euro (EUR)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="CAD">Canadian Dollar (CAD)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="CNY">Chinese Yuan (CNY)</option>
+                                <option value="INR">Indian Rupee (INR)</option>
+                                <option value="NZD">New Zealand Dollar (NZD)</option>
+                            </select>
+                            <span class="helper-text">Select the currency you're converting from</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="currency-to">To Currency</label>
+                            <select id="currency-to" required>
+                                <option value="EUR">Euro (EUR)</option>
+                                <option value="USD">US Dollar (USD)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="CAD">Canadian Dollar (CAD)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="CNY">Chinese Yuan (CNY)</option>
+                                <option value="INR">Indian Rupee (INR)</option>
+                                <option value="NZD">New Zealand Dollar (NZD)</option>
+                            </select>
+                            <span class="helper-text">Select the currency you're converting to</span>
+                        </div>
+                        <button type="submit" class="calculate-btn">Convert Currency</button>
+                        <div class="result" aria-live="polite">
+                            <!-- Results will be inserted here by JavaScript -->
+                        </div>
+                    </form>
+                </section>
+
+                <section class="calculator-info">
+                    <h3>Understanding Currency Exchange</h3>
+                    <p>Currency exchange rates fluctuate based on various economic factors, including interest rates, economic stability, and international trade. Our converter uses up-to-date exchange rates to provide accurate conversions between major world currencies.</p>
+                    
+                    <div class="tips">
+                        <h4>Popular Currency Pairs</h4>
+                        <ul>
+                            <li>EUR/USD - Euro to US Dollar</li>
+                            <li>GBP/USD - British Pound to US Dollar</li>
+                            <li>USD/JPY - US Dollar to Japanese Yen</li>
+                            <li>USD/CHF - US Dollar to Swiss Franc</li>
+                            <li>AUD/USD - Australian Dollar to US Dollar</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>Currency Exchange Tips</h4>
+                        <ul>
+                            <li>Compare rates from different providers</li>
+                            <li>Watch for hidden fees and commissions</li>
+                            <li>Consider timing for better rates</li>
+                            <li>Be aware of exchange rate fluctuations</li>
+                            <li>Plan ahead for international transactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips">
+                        <h4>When to Use Currency Converter</h4>
+                        <ul>
+                            <li>International travel planning</li>
+                            <li>Online shopping from foreign sites</li>
+                            <li>International business transactions</li>
+                            <li>Investment in foreign markets</li>
+                            <li>Sending money abroad</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Empowering individuals with financial calculation tools for better money decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="mortgage.html">Mortgage Calculator</a></li>
+                        <li><a href="compound.html">Compound Interest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@financecalculatorshub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Finance Calculators Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
